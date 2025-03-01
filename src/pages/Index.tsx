@@ -50,7 +50,7 @@ const Index = () => {
     {
       name: 'James Wilson',
       role: 'Regular Customer',
-      comment: 'I've been coming here for years for all my tailoring needs. Their work is consistently excellent and their customer service is top-notch.',
+      comment: "I've been coming here for years for all my tailoring needs. Their work is consistently excellent and their customer service is top-notch.",
       rating: 4,
     }
   ];

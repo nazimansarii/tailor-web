@@ -41,7 +41,7 @@ const Contact = () => {
     },
     {
       question: 'What should I bring to my first appointment?',
-      answer: 'For alterations, please bring the garment you want altered and any shoes or undergarments you'll wear with it. For custom garments, you don't need to bring anything specific, but reference images of styles you like can be helpful.'
+      answer: "For alterations, please bring the garment you want altered and any shoes or undergarments you'll wear with it. For custom garments, you don't need to bring anything specific, but reference images of styles you like can be helpful."
     },
     {
       question: 'How many fittings will I need for a custom garment?',

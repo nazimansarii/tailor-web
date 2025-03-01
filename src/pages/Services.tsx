@@ -8,7 +8,7 @@ const Services = () => {
     {
       title: 'Custom Suits',
       icon: <Scissors className="h-8 w-8" />,
-      description: 'Experience the luxury of a perfectly fitted suit designed to your exact specifications. From fabric selection to final fitting, we guide you through every step of creating a garment that's uniquely yours.',
+      description: "Experience the luxury of a perfectly fitted suit designed to your exact specifications. From fabric selection to final fitting, we guide you through every step of creating a garment that's uniquely yours.",
       features: [
         'Personal consultation and styling advice',
         'Premium fabric selection',
@@ -22,7 +22,7 @@ const Services = () => {
     {
       title: 'Dress Alterations',
       icon: <Shirt className="h-8 w-8" />,
-      description: 'Transform your dresses to fit and flatter your body perfectly. Whether it's a simple hem adjustment or a complex resizing, our specialists ensure your dress looks like it was made just for you.',
+      description: "Transform your dresses to fit and flatter your body perfectly. Whether it's a simple hem adjustment or a complex resizing, our specialists ensure your dress looks like it was made just for you.",
       features: [
         'Precision fitting and marking',
         'Expert handling of delicate fabrics',
