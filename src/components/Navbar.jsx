@@ -52,7 +52,7 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) => 
-                `text-sm font-medium hover:text-accent transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:scale-x-0 after:hover:scale-x-100 after:transition-transform after:duration-300 after:origin-bottom-right after:bg-accent ${isActive ? 'text-accent after:scale-x-100' : ''}`
+                `text-sm font-medium hover:text-cyan-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:scale-x-0 after:hover:scale-x-100 after:transition-transform after:duration-300 after:origin-bottom-right after:bg-accent ${isActive ? ' text-cyan-600 after:scale-x-100' : ''}`
               }
             >
               {link.name}
@@ -83,7 +83,7 @@ const Navbar = () => {
               to={link.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => 
-                `text-lg font-medium transition-colors ${isActive ? 'text-accent' : ''}`
+                `text-lg font-medium transition-colors ${isActive ? 'text-cyan-600' : ''}`
               }
             >
               {link.name}

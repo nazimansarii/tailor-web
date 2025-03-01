@@ -1,27 +1,29 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Scissors, Shirt, Award } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Scissors, Shirt,  Award } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
+
+
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
-      details: '(555) 123-4567',
-      link: 'tel:+15551234567'
+      details: '+91 6307204723',
+      link: 'tel:+916307204723'
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
-      details: 'info@tailorshop.com',
-      link: 'mailto:info@tailorshop.com'
+      details: 'najimansair9120@gmail.com',
+      link: 'mailto:najimansari9120@gmail.com'
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Location',
-      details: '123 Fashion Street, Tailorville, TX 75001',
-      link: 'https://maps.google.com'
+      details: 'Dhanupur Bazar, Handia Prayagraj, Uttar Pradesh, India',
+      link: 'https://www.google.com/maps/@25.4246001,82.2831626,14.44z?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D'
     },
     {
       icon: <Clock className="h-5 w-5" />,
@@ -53,21 +55,21 @@ const Contact = () => {
     {
       title: "Premium Custom Suit",
       description: "A fully tailored suit crafted from Italian wool with personalized details.",
-      price: "$899",
-      image: "https://images.unsplash.com/photo-1598808503746-f34cfbf02d49?q=80&w=1528",
+      price: "₹899",
+      image: "https://images.unsplash.com/photo-1594938291221-94f18cbb5660?q=80&w=1160",
       icon: <Scissors className="h-5 w-5" />
     },
     {
       title: "Executive Shirt Package",
       description: "Set of 5 custom-fitted dress shirts in premium cotton, perfect for business professionals.",
-      price: "$450",
+      price: "₹50",
       image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=1528",
       icon: <Shirt className="h-5 w-5" />
     },
     {
       title: "Premium Formal Wear",
       description: "Complete formal attire including tailored shirt, trousers, and accessories for special occasions.",
-      price: "$799",
+      price: "₹799",
       image: "https://images.unsplash.com/photo-1594938291221-94f18cbb5660?q=80&w=1160",
       icon: <Award className="h-5 w-5" />
     }
@@ -79,7 +81,7 @@ const Contact = () => {
       <section className="section bg-secondary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4 animate-slide-in">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10  rounded-full mb-4 animate-slide-in">
               Contact Us
             </span>
             <h1 className="text-4xl md:text-5xl font-serif font-medium mb-6 animate-fade-in">Get in touch with our team</h1>
@@ -89,12 +91,12 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Featured Items Showcase */}
       <section className="section bg-muted/30">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10  rounded-full mb-4">
               Featured Items
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">Explore our craftsmanship</h2>
@@ -102,14 +104,14 @@ const Contact = () => {
               Discover some of our most popular tailoring services and creations
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredItems.map((item, index) => (
               <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border/30 hover:shadow-md transition-all duration-300 group">
                 <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={item.title}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 right-3 bg-accent text-white text-sm font-medium px-3 py-1 rounded-full">
@@ -119,12 +121,12 @@ const Contact = () => {
                 <div className="p-5">
                   <div className="flex items-center mb-3">
                     <div className="bg-accent/10 rounded-full p-2 mr-3">
-                      <div className="text-accent">{item.icon}</div>
+                      <div className="">{item.icon}</div>
                     </div>
                     <h3 className="text-xl font-medium">{item.title}</h3>
                   </div>
                   <p className="text-muted-foreground mb-4">{item.description}</p>
-                  <button className="text-sm font-medium text-accent hover:underline inline-flex items-center">
+                  <button className="text-sm font-medium  hover:underline inline-flex items-center">
                     Inquire now <span className="ml-1">→</span>
                   </button>
                 </div>
@@ -133,21 +135,21 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Contact Information */}
       <section className="section">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((info, index) => (
-              <div key={index} className="bg-card p-6 rounded-xl shadow-sm border border-border/30 text-center hover:shadow-md transition-shadow hover:translate-y-[-5px] duration-300">
+              <div key={index} className="bg-card p-6 rounded-xl shadow-sm border border-border/30 text-center hover:shadow-md transition-shadow hover:translate-y-[-5px] duration-300  overflow-hidden">
                 <div className="bg-accent/10 rounded-full p-3 inline-block mb-4">
-                  <div className="text-accent">{info.icon}</div>
+                  <div className="">{info.icon}</div>
                 </div>
                 <h3 className="text-lg font-medium mb-2">{info.title}</h3>
                 {info.link ? (
-                  <a 
-                    href={info.link} 
-                    className="text-muted-foreground hover:text-accent transition-colors"
+                  <a
+                    href={info.link}
+                    className="text-muted-foreground  transition-colors"
                     target={info.title === 'Location' ? '_blank' : undefined}
                     rel={info.title === 'Location' ? 'noopener noreferrer' : undefined}
                   >
@@ -159,30 +161,19 @@ const Contact = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border/30">
               <h2 className="text-2xl font-serif font-medium mb-6">Send us a message</h2>
               <ContactForm />
             </div>
-            
+
             {/* Map & Hours */}
             <div className="space-y-8">
               {/* Map (placeholder) */}
-              <div className="bg-muted rounded-xl overflow-hidden shadow-sm border border-border/30 h-80">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26865.334412026213!2d-96.8014338!3d32.7766642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e993d0ea3c1ff%3A0x1859d2cc74f588e2!2sDowntown%20Dallas%2C%20Dallas%2C%20TX!5e0!3m2!1sen!2sus!4v1687900210489!5m2!1sen!2sus" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy"
-                  title="Location Map"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              
+           
+
               {/* Business Hours */}
               <div className="bg-card p-6 rounded-xl shadow-sm border border-border/30">
                 <h2 className="text-2xl font-serif font-medium mb-4">Business Hours</h2>
@@ -205,7 +196,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
       {/* FAQ Section */}
       <section className="section bg-secondary">
         <div className="container-custom">
@@ -218,7 +209,7 @@ const Contact = () => {
               Find quick answers to common questions about our tailoring services.
             </p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto divide-y divide-border">
             {faqs.map((faq, index) => (
               <div key={index} className="py-6">

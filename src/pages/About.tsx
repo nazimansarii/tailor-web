@@ -5,9 +5,9 @@ import { CheckCircle, Users, Award, Clock } from 'lucide-react';
 const About = () => {
   const stats = [
     { label: 'Years of Experience', value: '25+' },
-    { label: 'Satisfied Clients', value: '10,000+' },
-    { label: 'Custom Garments', value: '15,000+' },
-    { label: 'Expert Tailors', value: '12' }
+    { label: 'Satisfied Clients', value: '1000+' },
+    { label: 'Custom Garments', value: '1500+' },
+
   ];
 
   const values = [
@@ -60,7 +60,7 @@ const About = () => {
       <section className="section bg-secondary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4 animate-slide-in">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 rounded-full mb-4 animate-slide-in">
               About Us
             </span>
             <h1 className="text-4xl md:text-5xl font-serif font-medium mb-6 animate-fade-in">Our story of thread and needle</h1>
@@ -70,30 +70,30 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Story Section */}
       <section className="section">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=1587" 
-                alt="Tailor measuring a suit" 
+              <img
+                src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=1587"
+                alt="Tailor measuring a suit"
                 className="rounded-xl shadow-lg object-cover h-[600px] w-full"
               />
               <div className="absolute -bottom-6 -right-6 hidden md:block">
-                <img 
-                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1471" 
-                  alt="Tailor working" 
+                <img
+                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1471"
+                  alt="Tailor working"
                   className="rounded-xl shadow-lg h-72 w-56 object-cover border-4 border-background"
                 />
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <h2 className="text-3xl font-serif font-medium">From humble beginnings to tailoring excellence</h2>
               <p className="text-muted-foreground">
-                What began as a small family workshop has grown into a renowned establishment trusted by clients from all walks of life. Our journey started when Robert Chen, our founder, opened a small shop with just two sewing machines and a passion for craftsmanship.
+                What began as a small family workshop has grown into a renowned establishment trusted by clients from all walks of life. Our journey started when Raish Ahamed, our founder, opened a small shop with just two sewing machines and a passion for craftsmanship.
               </p>
               <p className="text-muted-foreground">
                 As word spread about the quality of our work, we expanded our team and services. Today, we blend traditional techniques passed down through generations with modern innovations, creating garments that honor the past while embracing the future.
@@ -105,7 +105,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Stats Section */}
       <section className="section bg-accent text-accent-foreground">
         <div className="container-custom">
@@ -119,12 +119,12 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Values Section */}
       <section className="section">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10  rounded-full mb-4">
               Our Values
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">What drives our craftsmanship</h2>
@@ -132,12 +132,12 @@ const About = () => {
               Our core values shape everything we do, from the first measurement to the final stitch.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-card p-6 rounded-xl shadow-sm border border-border/30 hover:shadow-md transition-shadow">
                 <div className="bg-accent/10 rounded-full p-3 inline-block mb-4">
-                  <div className="text-accent">{value.icon}</div>
+                  <div className="">{value.icon}</div>
                 </div>
                 <h3 className="text-xl font-serif font-medium mb-3">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
@@ -146,38 +146,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Team Section */}
-      <section className="section bg-secondary">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
-              Our Team
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">Meet our master tailors</h2>
-            <p className="text-muted-foreground">
-              The skilled hands and creative minds behind every garment we create.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border/30 hover:shadow-md transition-shadow">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-64 object-cover object-center"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-serif font-medium">{member.name}</h3>
-                  <p className="text-accent text-sm mb-4">{member.role}</p>
-                  <p className="text-muted-foreground">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
     </div>
   );
 };

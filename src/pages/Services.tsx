@@ -16,7 +16,7 @@ const Services = () => {
         'Custom details like monograms and unique linings',
         'Delivered in 3-4 weeks'
       ],
-      price: 'Starting at $499',
+      price: 'Starting at ₹600',
       image: 'https://images.unsplash.com/photo-1598808503746-f34cfbf02d49?q=80&w=1528'
     },
     {
@@ -30,7 +30,7 @@ const Services = () => {
         'Preservation of original design elements',
         'Quick turnaround available'
       ],
-      price: 'Starting at $50',
+      price: 'Starting at ₹50',
       image: 'https://images.unsplash.com/photo-1535572290543-960a8046f5af?q=80&w=1470'
     },
     {
@@ -106,7 +106,7 @@ const Services = () => {
       <section className="section bg-secondary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4 animate-slide-in">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 rounded-full mb-4 animate-slide-in">
               Our Services
             </span>
             <h1 className="text-4xl md:text-5xl font-serif font-medium mb-6 animate-fade-in">Tailoring excellence for every occasion</h1>
@@ -125,7 +125,7 @@ const Services = () => {
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className="space-y-6">
                   <div className="bg-accent/10 rounded-full p-3 inline-block mb-2">
-                    <div className="text-accent">{service.icon}</div>
+                    <div className="">{service.icon}</div>
                   </div>
                   <h2 className="text-3xl font-serif font-medium">{service.title}</h2>
                   <p className="text-muted-foreground">{service.description}</p>
@@ -135,7 +135,7 @@ const Services = () => {
                     <ul className="space-y-2">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start">
-                          <CheckCircle2 className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle2 className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -144,17 +144,11 @@ const Services = () => {
                   
                   <div className="pt-2">
                     <p className="text-lg font-medium">{service.price}</p>
-                    <Link to="/contact" className="btn-primary mt-4 inline-block">
-                      Book Now
-                    </Link>
+                    
                   </div>
                 </div>
                 <div className="relative">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="rounded-xl shadow-lg object-cover w-full h-[500px]"
-                  />
+                 
                   <div className="absolute -bottom-4 -right-4 bg-background py-2 px-4 rounded-lg shadow-lg border border-border text-sm font-medium">
                     Most Popular
                   </div>
@@ -169,7 +163,7 @@ const Services = () => {
       <section className="section bg-secondary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10   rounded-full mb-4">
               Additional Services
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">More ways we can help</h2>
@@ -182,11 +176,11 @@ const Services = () => {
             {additionalServices.map((service, index) => (
               <div key={index} className="bg-card p-8 rounded-xl shadow-sm border border-border/30 text-center hover:shadow-md transition-shadow hover:translate-y-[-5px] duration-300">
                 <div className="bg-accent/10 rounded-full p-4 inline-block mb-4">
-                  <div className="text-accent">{service.icon}</div>
+                  <div className="">{service.icon}</div>
                 </div>
                 <h3 className="text-xl font-serif font-medium mb-3">{service.title}</h3>
                 <p className="text-muted-foreground mb-6">{service.description}</p>
-                <Link to="/contact" className="text-accent font-medium hover:underline">
+                <Link to="/contact" className=" font-medium hover:underline">
                   Learn more
                 </Link>
               </div>
@@ -199,7 +193,7 @@ const Services = () => {
       <section className="section">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 rounded-full mb-4">
               Our Process
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">How we work</h2>
@@ -211,7 +205,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {process.map((step, index) => (
               <div key={index} className="bg-card p-6 rounded-xl shadow-sm border border-border/30 hover:border-accent/30 transition-all duration-300">
-                <div className="text-4xl font-serif text-accent/70 font-light mb-4">
+                <div className="text-4xl font-serif  font-light mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-xl font-serif font-medium mb-3">{step.title}</h3>

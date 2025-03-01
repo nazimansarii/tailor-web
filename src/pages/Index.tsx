@@ -12,7 +12,7 @@ const Index = () => {
       title: 'Custom Suits',
       description: 'Tailored to fit your exact measurements and style preferences, our custom suits are crafted with precision and care.',
       icon: <Scissors className="h-6 w-6" />,
-      price: '499',
+      price: '600',
     },
     {
       title: 'Alterations',
@@ -30,7 +30,7 @@ const Index = () => {
       title: 'Repairs',
       description: 'Extend the life of your favorite garments with our comprehensive repair services, from fixing tears to replacing zippers.',
       icon: <ShoppingBag className="h-6 w-6" />,
-      price: '25',
+      price: '50',
     }
   ];
 
@@ -65,12 +65,12 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full">
+              <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 rounded-full">
                 Our Story
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-medium">Crafting perfection through tradition and innovation</h2>
               <p className="text-muted-foreground">
-                Founded in 1995, our tailor shop has been a cornerstone of quality craftsmanship in the community. We combine traditional techniques passed down through generations with modern innovations to deliver garments that are both timeless and contemporary.
+                Founded in 2012, our tailor shop has been a cornerstone of quality craftsmanship in the community. We combine traditional techniques passed down through generations with modern innovations to deliver garments that are both timeless and contemporary.
               </p>
               <p className="text-muted-foreground">
                 Every stitch we make is a commitment to excellence, ensuring that each garment not only fits perfectly but also reflects your unique style and personality.
@@ -88,10 +88,10 @@ const Index = () => {
               <div className="absolute -bottom-6 -left-6 bg-background p-4 rounded-lg shadow-lg border border-border">
                 <div className="flex items-center space-x-4">
                   <div className="bg-accent/10 rounded-full p-3">
-                    <Scissors className="h-6 w-6 text-accent" />
+                    <Scissors className="h-6 w-6 " />
                   </div>
                   <div>
-                    <p className="font-medium">25+ Years</p>
+                    <p className="font-medium">15+ Years</p>
                     <p className="text-sm text-muted-foreground">of Excellence</p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Index = () => {
       <section className="section bg-secondary">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10  rounded-full mb-4">
               Our Services
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">Tailored to your needs</h2>
@@ -139,7 +139,7 @@ const Index = () => {
       <section className="section">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10  rounded-full mb-4">
               Testimonials
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">What our clients say</h2>

@@ -1,7 +1,14 @@
-
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Scissors, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import {
+  Scissors,
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+  Facebook,
+  Twitter,
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,18 +24,31 @@ const Footer = () => {
               <span className="font-serif text-xl font-semibold">Tailor</span>
             </div>
             <p className="text-muted-foreground max-w-xs">
-              Crafting elegant, custom-made clothing with precision and passion since 1995.
+              Crafting elegant, custom-made clothing with precision and passion
+              since 2012.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-foreground hover:text-accent transition-colors" aria-label="Instagram">
+              <Link
+                to="#"
+                className="text-foreground hover:text-cyan-600 transition-colors"
+                aria-label="Instagram"
+              >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-foreground hover:text-accent transition-colors" aria-label="Facebook">
+              </Link>
+              <Link
+                to="#"
+                className="text-foreground hover:text-cyan-600 transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-foreground hover:text-accent transition-colors" aria-label="Twitter">
+              </Link>
+              <Link
+                to="#"
+                className="text-foreground hover:text-cyan-600 transition-colors"
+                aria-label="Twitter"
+              >
                 <Twitter className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -37,22 +57,34 @@ const Footer = () => {
             <h3 className="font-serif font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <NavLink to="/" className="text-muted-foreground hover:text-accent transition-colors">
+                <NavLink
+                  to="/"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="text-muted-foreground hover:text-accent transition-colors">
+                <NavLink
+                  to="/about"
+                  className="text-muted-foreground hover:text-cyan-600transition-colors"
+                >
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/services" className="text-muted-foreground hover:text-accent transition-colors">
+                <NavLink
+                  to="/services"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Services
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="text-muted-foreground hover:text-accent transition-colors">
+                <NavLink
+                  to="/contact"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Contact
                 </NavLink>
               </li>
@@ -60,50 +92,70 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="font-serif font-medium text-lg mb-4">Services</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="#"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Custom Suits
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="#"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Dress Alterations
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="#"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Wedding Attire
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="#"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
                   Repairs & Modifications
-                </a>
+                </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
             <h3 className="font-serif font-medium text-lg mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-accent mt-0.5" />
-                <span className="text-muted-foreground">123 Fashion Street, Tailorville, TX 75001</span>
+                <MapPin className="h-5 w-5 mt-0.5" />
+                <span className="text-muted-foreground">
+                  Dhanpur Bazar, Handia Prayagraj, UP (221503)
+                </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-accent" />
-                <a href="tel:+15551234567" className="text-muted-foreground hover:text-accent transition-colors">
-                  (555) 123-4567
+                <Phone className="h-5 w-5" />
+                <a
+                  to="tel:6307204723"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
+                  +91 6307204723
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-accent" />
-                <a href="mailto:info@tailorshop.com" className="text-muted-foreground hover:text-accent transition-colors">
-                  info@tailorshop.com
+                <Mail className="h-5 w-5 " />
+                <a
+                  to="mailto:najimansari9120@gmail.com"
+                  className="text-muted-foreground hover:text-cyan-600 transition-colors"
+                >
+                  najimansari9120@gmail.com
                 </a>
               </li>
             </ul>

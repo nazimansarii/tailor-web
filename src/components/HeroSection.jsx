@@ -18,13 +18,14 @@ const HeroSection = () => {
       {/* Content Container */}
       <div className="relative h-full flex flex-col justify-center container-custom">
         <div className="max-w-xl animate-fade-in">
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10  rounded-full mb-4">
             Craftsmanship at its finest
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-white leading-tight">
-            Bespoke tailoring for the modern individual
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold  leading-tight">
+          Expert Tailoring, Perfect Fit
+          15 Years of Style, Comfort, and Trust
           </h1>
-          <p className="mt-6 text-lg text-white/90">
+          <p className="mt-6 text-lg ">
             We combine traditional techniques with modern styles to create clothing that's perfectly fitted to you.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -40,9 +41,9 @@ const HeroSection = () => {
       </div>
       
       {/* Subtle scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce ">
         <div className="w-1 h-10 rounded-full bg-white/30 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-white animate-[scroll_2s_infinite]"></div>
+          <div className="absolute top-0 left-0 w-full h-full  animate-[scroll_2s_infinite] bg-current"></div>
         </div>
       </div>
     </div>
