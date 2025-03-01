@@ -58,16 +58,16 @@ const Contact = () => {
       icon: <Scissors className="h-5 w-5" />
     },
     {
-      title: "Wedding Dress Alterations",
-      description: "Expert alterations to make your wedding dress fit perfectly for your special day.",
-      price: "From $250",
-      image: "https://images.unsplash.com/photo-1549417229-aa67d3263c09?q=80&w=1374",
-      icon: <Shirt className="h-5 w-5" />
-    },
-    {
       title: "Executive Shirt Package",
       description: "Set of 5 custom-fitted dress shirts in premium cotton, perfect for business professionals.",
       price: "$450",
+      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=1528",
+      icon: <Shirt className="h-5 w-5" />
+    },
+    {
+      title: "Premium Formal Wear",
+      description: "Complete formal attire including tailored shirt, trousers, and accessories for special occasions.",
+      price: "$799",
       image: "https://images.unsplash.com/photo-1594938291221-94f18cbb5660?q=80&w=1160",
       icon: <Award className="h-5 w-5" />
     }
