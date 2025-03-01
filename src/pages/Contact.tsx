@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Scissors, Shirt, Award } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
@@ -49,6 +49,30 @@ const Contact = () => {
     }
   ];
 
+  const featuredItems = [
+    {
+      title: "Premium Custom Suit",
+      description: "A fully tailored suit crafted from Italian wool with personalized details.",
+      price: "$899",
+      image: "https://images.unsplash.com/photo-1598808503746-f34cfbf02d49?q=80&w=1528",
+      icon: <Scissors className="h-5 w-5" />
+    },
+    {
+      title: "Wedding Dress Alterations",
+      description: "Expert alterations to make your wedding dress fit perfectly for your special day.",
+      price: "From $250",
+      image: "https://images.unsplash.com/photo-1549417229-aa67d3263c09?q=80&w=1374",
+      icon: <Shirt className="h-5 w-5" />
+    },
+    {
+      title: "Executive Shirt Package",
+      description: "Set of 5 custom-fitted dress shirts in premium cotton, perfect for business professionals.",
+      price: "$450",
+      image: "https://images.unsplash.com/photo-1594938291221-94f18cbb5660?q=80&w=1160",
+      icon: <Award className="h-5 w-5" />
+    }
+  ];
+
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -62,6 +86,50 @@ const Contact = () => {
             <p className="text-muted-foreground text-lg mb-8 animate-fade-in">
               Whether you have questions about our services or want to schedule an appointment, we're here to help.
             </p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Featured Items Showcase */}
+      <section className="section bg-muted/30">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full mb-4">
+              Featured Items
+            </span>
+            <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4">Explore our craftsmanship</h2>
+            <p className="text-muted-foreground">
+              Discover some of our most popular tailoring services and creations
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredItems.map((item, index) => (
+              <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border/30 hover:shadow-md transition-all duration-300 group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 right-3 bg-accent text-white text-sm font-medium px-3 py-1 rounded-full">
+                    {item.price}
+                  </div>
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center mb-3">
+                    <div className="bg-accent/10 rounded-full p-2 mr-3">
+                      <div className="text-accent">{item.icon}</div>
+                    </div>
+                    <h3 className="text-xl font-medium">{item.title}</h3>
+                  </div>
+                  <p className="text-muted-foreground mb-4">{item.description}</p>
+                  <button className="text-sm font-medium text-accent hover:underline inline-flex items-center">
+                    Inquire now <span className="ml-1">→</span>
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
