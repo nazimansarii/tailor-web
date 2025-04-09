@@ -41,7 +41,7 @@ const ContactForm = () => {
   return (
     <form
       className="space-y-6"
-      action="https://formspree.io/f/movqwvjd"
+      action="https://formspree.io/f/xdkepbwl"
       method="POST"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
